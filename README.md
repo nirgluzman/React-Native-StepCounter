@@ -9,3 +9,13 @@ https://github.com/notJust-dev/StepCounter
 ## My repo on GitHub:
 
 https://github.com/nirgluzman/React-Native-StepCounter.git
+
+## Get Started with React Native
+
+https://reactnative.dev/docs/environment-setup
+
+https://docs.expo.dev/more/create-expo/#options
+
+```bash
+npx create-expo-app@latest --template blank-typescript
+```
