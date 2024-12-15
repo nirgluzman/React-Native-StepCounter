@@ -24,11 +24,21 @@ npx create-expo-app@latest --template blank-typescript
 
 https://docs.expo.dev/guides/customizing-metro/
 
+- Purpose: Handles the bundling process, combining multiple JavaScript files into a single bundle
+  that can be executed by the device or simulator.
+
 - Metro Bundler is the default JavaScript bundler for React Native projects.
 - It's responsible for transforming, bundling, and serving your JavaScript code to the development
   server or packaging it for production.
   - Metro is highly optimized for the React Native environment, providing a seamless development
     experience.
+
+## Babel configuration file
+
+https://docs.expo.dev/versions/latest/config/babel/
+
+- Purpose: Babel is used as the JavaScript compiler to transform modern JavaScript (ES6+) into a
+  version compatible with the JavaScript engine on mobile devices.
 
 ## React Native Reanimated
 
@@ -39,8 +49,6 @@ https://docs.swmansion.com/react-native-reanimated/
 - Installation includes `react-native-reanimated` package from npm and babel plugin.
 - Reanimated babel plugin automatically converts special JavaScript functions (called worklets) to
   allow them to be passed and run on the UI thread.
-
-https://docs.expo.dev/versions/latest/config/babel/
 
 ## React Native animations - Tutorial
 
