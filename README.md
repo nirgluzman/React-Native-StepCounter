@@ -62,3 +62,7 @@ https://docs.expo.dev/versions/latest/sdk/svg/
 
 - `react-native-svg` allows you to use SVGs in your app, with support for interactivity and
   animation.
+
+## Icons
+
+https://docs.expo.dev/guides/icons/
