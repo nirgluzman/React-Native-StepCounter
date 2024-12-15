@@ -40,6 +40,14 @@ https://docs.expo.dev/versions/latest/config/babel/
 - Purpose: Babel is used as the JavaScript compiler to transform modern JavaScript (ES6+) into a
   version compatible with the JavaScript engine on mobile devices.
 
+## React Native Health --> package cannot be used in the Expo Go app !!
+
+- Interface for reading and writing a user’s health and fitness data.
+
+https://github.com/agencyenterprise/react-native-health (Apple)
+
+https://github.com/matinzd/react-native-health-connect (Android)
+
 ## React Native Reanimated
 
 https://docs.expo.dev/versions/latest/sdk/reanimated/
