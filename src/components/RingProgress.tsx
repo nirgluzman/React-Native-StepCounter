@@ -1,3 +1,5 @@
+// https://www.notjust.dev/projects/step-counter/animated-progress-ring
+
 import { View } from 'react-native';
 import Svg, { Circle, type CircleProps } from 'react-native-svg';
 import Animated, {
@@ -39,6 +41,7 @@ export const RingProgress = ({ radius = 100, strokeWidth = 35, progress }: RingP
     cy: radius,
     originX: radius,
     originY: radius,
+    fill: 'transparent', // defines the color of the shape inside its outline (the surface of the SVG shape, in other words) --> to ensure consistent stroke width !!
     stroke: color,
     strokeWidth,
     strokeLinecap: 'round',
@@ -54,7 +57,7 @@ export const RingProgress = ({ radius = 100, strokeWidth = 35, progress }: RingP
       }}>
       <Svg>
         {/* background */}
-        <Circle {...circleDefaultProps} opacity={0.2} />
+        <Circle {...circleDefaultProps} opacity={0.15} />
 
         {/* foreground */}
         <AnimatedCircle {...circleDefaultProps} animatedProps={animatedProps} />
