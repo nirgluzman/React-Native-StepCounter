@@ -1,5 +1,5 @@
 import { View } from 'react-native';
-import Svg, { Circle } from 'react-native-svg';
+import Svg, { Circle, type CircleProps } from 'react-native-svg';
 import Animated, {
   useAnimatedProps, // create an animated props object which can be animated using shared values.
   useSharedValue, // create a shared value which can be animated.
@@ -33,6 +33,18 @@ export const RingProgress = ({ radius = 100, strokeWidth = 35, progress }: RingP
     strokeDasharray: [circumference * fill.value, circumference], // defines a pattern of dashes and gaps
   }));
 
+  const circleDefaultProps: CircleProps = {
+    r: innerRadius,
+    cx: radius,
+    cy: radius,
+    originX: radius,
+    originY: radius,
+    stroke: color,
+    strokeWidth,
+    strokeLinecap: 'round',
+    rotation: '-90',
+  };
+
   return (
     <View
       style={{
@@ -42,27 +54,10 @@ export const RingProgress = ({ radius = 100, strokeWidth = 35, progress }: RingP
       }}>
       <Svg>
         {/* background */}
-        <Circle
-          r={innerRadius}
-          cx={radius}
-          cy={radius}
-          stroke={color}
-          strokeWidth={strokeWidth}
-          opacity={0.2}
-        />
+        <Circle {...circleDefaultProps} opacity={0.2} />
+
         {/* foreground */}
-        <AnimatedCircle
-          r={innerRadius}
-          cx={radius}
-          cy={radius}
-          originX={radius}
-          originY={radius}
-          stroke={color}
-          strokeWidth={strokeWidth}
-          animatedProps={animatedProps}
-          strokeLinecap='round'
-          rotation='-90'
-        />
+        <AnimatedCircle {...circleDefaultProps} animatedProps={animatedProps} />
       </Svg>
     </View>
   );
