@@ -19,3 +19,10 @@ https://docs.expo.dev/more/create-expo/#options
 ```bash
 npx create-expo-app@latest --template blank-typescript
 ```
+
+## SVG
+
+https://docs.expo.dev/versions/latest/sdk/svg/
+
+- `react-native-svg` allows you to use SVGs in your app, with support for interactivity and
+  animation.
