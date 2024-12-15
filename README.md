@@ -20,6 +20,16 @@ https://docs.expo.dev/more/create-expo/#options
 npx create-expo-app@latest --template blank-typescript
 ```
 
+## Metro Bundler
+
+https://docs.expo.dev/guides/customizing-metro/
+
+- Metro Bundler is the default JavaScript bundler for React Native projects.
+- It's responsible for transforming, bundling, and serving your JavaScript code to the development
+  server or packaging it for production.
+  - Metro is highly optimized for the React Native environment, providing a seamless development
+    experience.
+
 ## React Native Reanimated
 
 https://docs.expo.dev/versions/latest/sdk/reanimated/
