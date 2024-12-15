@@ -1,25 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+import { Value } from './src/components/Value';
+
 export default function App() {
   return (
     <View style={styles.container}>
       <Text>Hello World!</Text>
 
-      <View style={{ flexDirection: 'row' }}>
-        <View style={styles.valueContainer}>
-          <Text style={styles.label}>Steps</Text>
-          <Text style={styles.value}>1219</Text>
-        </View>
-        <View style={styles.valueContainer}>
-          <Text style={styles.label}>Distance</Text>
-          <Text style={styles.value}>1,25 km</Text>
-        </View>
-      </View>
-
-      <View style={styles.valueContainer}>
-        <Text style={styles.label}>Flights Climbed</Text>
-        <Text style={styles.value}>0,3 km</Text>
+      <View style={styles.values}>
+        <Value label='Steps' value='1209' />
+        <Value label='Distance' value='1,25 km' />
+        <Value label='Flights Climbed' value='12' />
       </View>
 
       <StatusBar style='auto' />
@@ -36,19 +28,9 @@ const styles = StyleSheet.create({
     padding: 12,
   },
 
-  valueContainer: {
-    marginRight: 50,
-    marginVertical: 10,
-  },
-
-  label: {
-    fontSize: 20,
-    color: 'white',
-  },
-
-  value: {
-    fontSize: 35,
-    color: '#AFB3BE',
-    fontWeight: '500',
+  values: {
+    flexDirection: 'row',
+    gap: 25, // sets the size of the gap (gutter) between rows and columns.
+    flexWrap: 'wrap', // controls whether the flex items are forced onto one line or can wrap onto multiple lines.
   },
 });
