@@ -20,7 +20,19 @@ https://docs.expo.dev/more/create-expo/#options
 npx create-expo-app@latest --template blank-typescript
 ```
 
-## React Native animations
+## React Native Reanimated
+
+https://docs.expo.dev/versions/latest/sdk/reanimated/
+
+https://docs.swmansion.com/react-native-reanimated/
+
+- Installation includes `react-native-reanimated` package from npm and babel plugin.
+- Reanimated babel plugin automatically converts special JavaScript functions (called worklets) to
+  allow them to be passed and run on the UI thread.
+
+https://docs.expo.dev/versions/latest/config/babel/
+
+## React Native animations - Tutorial
 
 https://www.animatereactnative.com/
 
