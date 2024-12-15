@@ -20,6 +20,12 @@ https://docs.expo.dev/more/create-expo/#options
 npx create-expo-app@latest --template blank-typescript
 ```
 
+## React Native animations
+
+https://www.animatereactnative.com/
+
+https://www.youtube.com/@CatalinMironDev/featured
+
 ## SVG
 
 https://docs.expo.dev/versions/latest/sdk/svg/
