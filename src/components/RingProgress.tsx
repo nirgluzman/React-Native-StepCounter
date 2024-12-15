@@ -8,6 +8,8 @@ import Animated, {
   withTiming, // create a timing animation (ensures that the animation is smooth and natural).
 } from 'react-native-reanimated';
 
+import FontAwesome from '@expo/vector-icons/FontAwesome'; // https://icons.expo.fyi/Index/FontAwesome/arrow-right
+
 import { useEffect } from 'react';
 
 const AnimatedCircle = Animated.createAnimatedComponent(Circle);
@@ -62,6 +64,14 @@ export const RingProgress = ({ radius = 100, strokeWidth = 35, progress }: RingP
         {/* foreground */}
         <AnimatedCircle {...circleDefaultProps} animatedProps={animatedProps} />
       </Svg>
+
+      {/* arrow */}
+      <FontAwesome
+        name='arrow-right'
+        size={strokeWidth * 0.7}
+        color='black'
+        style={{ position: 'absolute', alignSelf: 'center', top: strokeWidth * 0.15 }}
+      />
     </View>
   );
 };
