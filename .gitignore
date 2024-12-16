@@ -37,3 +37,7 @@ yarn-error.*
 
 # vscode
 .vscode/
+
+# ignore native folders as we are using EAS build
+/android
+/ios
