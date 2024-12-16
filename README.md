@@ -40,6 +40,12 @@ https://docs.expo.dev/versions/latest/config/babel/
 - Purpose: Babel is used as the JavaScript compiler to transform modern JavaScript (ES6+) into a
   version compatible with the JavaScript engine on mobile devices.
 
+## Expo DevClient
+
+https://docs.expo.dev/versions/latest/sdk/dev-client/
+
+- `expo-dev-client` adds various useful development tools to your debug builds.
+
 ## React Native Health --> package cannot be used in the Expo Go app !!
 
 - Interface for reading and writing a user’s health and fitness data.
