@@ -30,8 +30,8 @@ https://docs.expo.dev/guides/customizing-metro/
 - Metro Bundler is the default JavaScript bundler for React Native projects.
 - It's responsible for transforming, bundling, and serving your JavaScript code to the development
   server or packaging it for production.
-  - Metro is highly optimized for the React Native environment, providing a seamless development
-    experience.
+- Metro is highly optimized for the React Native environment, providing a seamless development
+  experience.
 
 ## Babel configuration file
 
@@ -56,6 +56,12 @@ https://github.com/matinzd/react-native-health-connect (Android)
 https://matinzd.github.io/react-native-health-connect/docs/intro
 https://developer.android.com/reference/kotlin/androidx/health/connect/client/records/package-summary#classes
 https://www.notjust.dev/projects/step-counter/android-health-connect
+
+- Google Health Connect itself doesn't collect data. It's a tool that allows different health and
+  fitness apps to share data with each other in a secure and organized way.
+
+https://support.google.com/fit/answer/12830119?hl=en-GB&dark=1&sjid=1763338138388400782-EU
+https://stackoverflow.com/questions/79288279/why-doesnt-android-health-connect-capture-any-data/79290938#79290938
 
 ## React Native Reanimated
 
