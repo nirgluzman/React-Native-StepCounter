@@ -53,6 +53,8 @@ https://docs.expo.dev/versions/latest/sdk/dev-client/
 https://github.com/agencyenterprise/react-native-health (Apple)
 
 https://github.com/matinzd/react-native-health-connect (Android)
+https://matinzd.github.io/react-native-health-connect/docs/intro
+https://developer.android.com/reference/kotlin/androidx/health/connect/client/records/package-summary#classes
 https://www.notjust.dev/projects/step-counter/android-health-connect
 
 ## React Native Reanimated
